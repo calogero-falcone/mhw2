@@ -1,0 +1,406 @@
+body{
+	margin:0;
+	font-family: Arial, sans-serif;
+	}
+
+	header {
+		color:ivory;
+		height:400px;
+		width:100%;
+		background-image: url("header_image.png");
+		background-size: cover;
+		background-position:center;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		text-shadow: 6px 6px 8px black;
+		border-bottom: 2px solid black;
+		position:relative;
+		z-index:1;
+		}
+	
+		#overlay{
+			background-color:rgba(0, 0, 0, .3);
+			position:absolute;
+			top:0;
+			bottom:0;
+			height:100%;
+			width:100%;
+			z-index: 2;
+	
+		}
+
+		header h1{
+			margin-top:10%;
+			text-align: center;
+			font-size: 60px;
+			z-index:3;
+			}
+
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	display:flex;
+	align-items:center;
+	height:13%;
+	background-color:black;
+	z-index:6;
+}
+
+#flex-cont{
+	
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	font-family: 'Rubik' , sans-serif;
+	height:100%;
+	width:100%;
+	
+}
+
+#flex-cont a{
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  border-right:2px solid ivory;
+  padding:1%;
+}
+
+a:active{
+	background-color:azure;
+}
+
+ a:hover{
+	color:lightgrey;
+	border-radius: 15px;
+}
+
+a{
+	cursor:pointer;
+	color:white;
+	text-decoration: none;
+}
+
+button{
+	color:white;
+	border-radius: 5px;
+	padding: 1% 2%;
+    }
+
+
+#menu{
+	display:none;
+}
+
+#menu div{
+	width:25px;
+	height:3px;
+	background-color: ivory;
+	margin: 5px 0;
+}
+
+article.a_main{ 
+	height: 1300px;
+	display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	text-shadow: 6px 6px 8px black;
+	background-color: #25292B;
+}
+
+article.a_ricerca{
+	height:100px;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #25292B;
+}
+
+.a_ricerca #scritta_ricerca{
+	color:ivory;
+	font-size: 25px;
+	text-shadow: 6px 6px 8px black;
+	font-weight: bold;
+	margin-right:8px;
+	margin-top:10%;
+}
+
+.a_ricerca input{
+	margin-right:5%;
+	margin-top:10%;
+}
+ /*sez preferiti*/
+
+.a_preferiti{
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	justify-content: flex-start;
+	height:490px;
+	background-color: slategray;
+	border-bottom: 2px solid black;
+}
+
+.a_preferiti h1{
+	color:ivory;
+	text-shadow: 6px 6px 8px black;
+	margin-top:5%;
+	margin-left:1%;
+	height:20%;
+	font-size: 30px;
+}
+
+.a_preferiti section{
+	display:flex;
+	flex-wrap: wrap;
+	height:60%;
+	width:100%;
+	border:none;
+	margin-bottom:10%;
+}
+
+.box_section_preferito{
+background-color: #25292B;
+height: 180px;
+width: 180px;
+margin: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.box_section_preferito .box_titolo{
+height:30%;
+width:100%;
+display: flex;
+justify-content: space-between;
+}
+
+.box_section_preferito .box_titolo .titolo_preferito{
+	color: ivory;
+	font-size: 22px;
+}
+
+.box_section_preferito .box_titolo .img_preferito_selezionato{
+cursor:pointer;
+height: 40px;
+width: 40px;
+}
+
+.box_section_preferito .img_centrale_preferito{
+	height:70%;
+	width:100%;
+}
+
+/*fine sez pref */
+section{
+	margin-top:5%;
+    border:2px solid black;
+    background-color: slategrey;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	text-align:center;
+	height:40%;
+	width:30%;
+}
+
+section .box_titolo{
+    display: flex;
+    height:10%;
+    justify-content: space-between;
+    margin-bottom:5%;
+}
+
+
+section .box_titolo h1{
+    color:ivory;
+	text-shadow: black;
+	font-size: 25px;
+	
+}
+
+section .img_centrale{
+	height:60%;
+   width:100%;
+}
+
+section div .preferiti{
+	cursor: pointer;
+	height:40px;
+	width:40px;
+}
+
+section div .selezionati{
+	height:40px;
+	width:40px;
+}
+
+section div.box_scritta{
+height:20%;
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+section div.box_scritta button{
+	cursor:pointer;
+    background-color: #25292B;
+    margin: 0 20% 10% 20%;
+}
+
+section div.box_scritta p.scritta{
+color:ivory;
+height:30%;
+text-shadow: 6px 6px 8px black;
+font-size:14px;
+margin-bottom:6%;
+padding:0 2%;
+}
+
+footer{
+    background-color:black;
+}
+footer p{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	height:10%;
+	width:100%;
+	margin:0;
+}
+
+.matricola , .università{
+	margin-left: 5%;
+	color:ivory;
+font-family: 'Rubik',sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+.hidden{
+	display:none;
+}
+
+@media(max-width:500px){
+
+	header nav{
+		height:8%;
+	}
+	
+	#flex-cont a{
+		display:none;
+	}
+	
+	#flex-cont{
+		justify-content: flex-start;
+		align-items: center;
+		margin-left:5%;
+	}
+	
+	#menu{
+	display:block;
+	}
+	
+	#menu:active{
+		background-color: gray;
+	}
+
+	header{
+		height:350px;
+		width:130%;
+	}
+
+	article{
+		width:130%;
+	}
+
+	article.a_preferiti{
+    height:520px;
+	}
+
+    article.a_main{
+    height:2500px;
+    }   
+	
+	.a_preferiti h1{
+		font-size: 25px;
+		height:40px;
+	}
+	
+	.box_section_preferito{
+	height: 130px;
+	width: 130px;
+	margin: 12px;
+	}
+	
+	
+	.box_section_preferito .box_titolo .titolo_preferito{
+		font-size: 15px;
+	}
+	
+	.box_section_preferito .box_titolo .img_preferito_selezionato{
+	height: 30px;
+	width: 30px;
+	}
+
+	section{
+		height:15%;
+		width:100%;
+	}
+	
+	
+	section .box_titolo h1{
+		font-size: 26px;
+		
+	}
+	
+	section div .preferiti{
+		height:50px;
+		width:50px;
+	}
+	
+	section div .selezionati{
+		height:50px;
+		width:50px;
+	}
+	
+	section div.box_scritta p.scritta{
+	font-size:13px;
+	height:25%;
+	}
+
+	section div.box_scritta button{
+		height:20px;
+		width: 100px;
+		margin: 0 20% 10% 20%;
+		font-size:10px;
+	}
+
+	footer{
+		width:130%;
+	}
+	
+	footer p{
+		justify-content: center;
+		
+	}
+	
+	footer p img{
+		display:none;
+	}
+	
+	.matricola , .università{
+	font-size: 15px;
+	
+	}
+
+	#menu.hidden{
+		display:none;
+	}
+}

@@ -1,0 +1,317 @@
+body{
+	margin:0;
+	font-family: Arial, sans-serif;
+	}
+
+header {
+	color:ivory;
+	height:700px;
+	width:100%;
+	background-image: url("header_image.png");
+	background-size: cover;
+	background-position:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-end;
+	text-shadow: 6px 6px 8px black;
+	border-bottom: 2px solid black;
+	position:relative;
+    z-index:1;
+	}
+
+	#overlay{
+		background-color:rgba(0, 0, 0, .3);
+		position:absolute;
+		top:0;
+		bottom:0;
+		height:100%;
+		width:100%;
+		z-index: 2;
+
+	}
+
+header nav{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	display:flex;
+	align-items:center;
+	height:13%;
+	background-color:black;
+	z-index:6;
+}
+
+#flex-cont{
+	
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	font-family: 'Rubik' , sans-serif;
+	height:100%;
+	width:100%;
+	
+}
+
+#flex-cont a{
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  border-right:2px solid ivory;
+  padding:1%;
+}
+
+a:active{
+	background-color:azure;
+}
+
+ a:hover{
+	color:lightgrey;
+	border-radius: 15px;
+}
+
+a{
+	cursor:pointer;
+	color:white;
+	text-decoration: none;
+}
+
+a.button{
+	border: 3px solid ivory;
+	border-radius: 20px;
+	padding: 1% 2%;
+}
+
+#menu{
+	display:none;
+}
+
+#menu div{
+	width:25px;
+	height:3px;
+	background-color: ivory;
+	margin: 5px 0;
+}
+
+header h1.titolo{
+margin-bottom: 20%;
+text-align: center;
+font-size: 60px;
+z-index:3;
+
+}
+
+header h1.sottotitolo{
+	text-align: center;
+	font-size: 35px;
+	z-index:4;
+}
+
+
+
+header a.button{
+	margin-bottom:5%;
+	font-size:20px;
+	z-index: 5;
+}
+
+article{
+	background-color: #25292B;
+}
+
+section{
+	height: 3000px;
+	display:flex;
+	flex-direction: column;
+	text-shadow: 6px 6px 8px black;
+	
+}
+
+#titolo-section{
+	display:block;
+	font-family: 'Rubik',sans-serif;
+	color:#EE6059;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	font-style:italic;
+	margin:5%;
+}
+
+#box1-section,#box2-section,#box3-section,#box4-section{
+	
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+	height:22%;
+	width:100%;
+	margin-bottom:2%;
+	
+	
+}
+
+
+	.box1-text,.box2-text,.box3-text,.box4-text{
+		background-color:slategrey;
+		color:white;
+		height:40%;
+		width:50%;
+		margin: 0 25%;
+		font-size:90%;
+		border: 2px solid black;
+	}
+
+.box1-text a.button,.box2-text a.button,.box3-text a.button, .box4-text a.button{
+ margin: 37%;
+ font-size: 11px;
+}
+
+.box1-text h1,.box2-text h1, .box3-text h1,.box4-text h1{
+	text-align: center;
+	text-shadow: black;
+	font-size: 25px;
+	margin-bottom:5%;
+}
+.box1-text p, .box2-text p, .box3-text p, .box4-text p{
+	padding: 0 2%;
+	margin-bottom: 5%;
+	line-height: 160%;
+}
+
+.box1-img,.box2-img,.box3-img,.box4-img{
+	height:60%;
+	width:50%;
+	border: 2px solid black;
+	margin: 0 25%;
+}
+
+.box1-img img,.box2-img img,.box3-img img,.box4-img img{
+	height:100%;
+	width:100%;
+}
+
+footer p{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	height:10%;
+	width:100%;
+	background-color:black;
+	margin:0;
+}
+
+.matricola , .università{
+	margin-left: 5%;
+	color:ivory;
+font-family: 'Rubik',sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+@media(max-width:500px){
+
+header nav{
+	height:8%;
+}
+
+#flex-cont a{
+	display:none;
+}
+
+#flex-cont{
+	justify-content: flex-start;
+	align-items: center;
+	margin-left:5%;
+}
+
+#menu{
+display:block;
+}
+
+#menu:active{
+	background-color: gray;
+}
+
+header{
+	justify-content: flex-end;
+	font-size: 1em;
+	height:500px;
+	width:130%;
+}
+
+header h1.titolo{
+	font-size: 225%;
+	margin-bottom: 100px;
+}
+
+header h1.sottotitolo{
+	margin-top:150px;
+	font-size: 150%;
+}
+
+header a.button{
+	font-size: 90%;
+}
+
+section{
+	font-size: 1em;
+	height:2750px;
+	width: 130%;
+}
+
+#titolo-section{
+font-size: 200%;
+}
+
+#box1-section,#box2-section,#box3-section,#box4-section{
+	justify-content: flex-start;
+	align-items: center;
+	height:25%;
+	margin-bottom:25px;
+	
+}
+
+.box1-img,.box2-img,.box3-img,.box4-img{
+	width:100%;
+	margin:0;
+	border:none;
+}
+
+.box1-img img,.box2-img img,.box3-img img,.box4-img img{
+	width:100%;
+	
+}
+
+.box1-text,.box2-text,.box3-text,.box4-text{
+width:100%;
+margin:0;
+border:none;
+}
+
+.box1-text p, .box2-text p,.box3-text p,.box4-text p{
+	font-size: 100%;
+	line-height: 20px;
+
+}
+
+footer{
+	width:130%;
+}
+
+footer p{
+	justify-content: center;
+	
+}
+
+footer p img{
+	display:none;
+}
+
+.matricola , .università{
+font-size: 15px;
+
+}
+
+
+}
